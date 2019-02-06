@@ -43,4 +43,5 @@ resource "aws_instance" "secondserver" {
   tags {
     Name = "identifiertag"
   }
+  subnet_id = "${aws_subnet.subnet2.id}"
 }
