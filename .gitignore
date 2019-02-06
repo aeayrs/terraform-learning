@@ -10,3 +10,4 @@
 
 runaws/*
 .DS_Store
+.azure_profile
