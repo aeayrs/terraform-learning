@@ -27,3 +27,12 @@ variable subnet_names {
     subnet3 = "subnetthree"
   }
 }
+
+// Output variables
+output "first_output" {
+  value = "this is the output through execution"
+}
+
+output "aws_cidr_subnet1" {
+  value = "${aws_subnet.subnet1.cidr_block}"
+}
